@@ -4,12 +4,13 @@ require "deroulement/jeu.php";
 // attaque MARIO J1
 if (isset($_POST["attaque1j1"])) {
         perdreVie("joueur2", 1);
- 
         } 
 // spéciale MARIO J1
 if (isset($_POST["speciale1j1"])) {
         perdreVie("joueur2", 2);
         }
+
+
 // attaque LUIGI J1
 if (isset($_POST["attaque2j1"])) {
         perdreVie("joueur2", 2);

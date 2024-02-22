@@ -30,3 +30,7 @@ body {
   margin: auto;
   transform: scaleX(-1);
 }
+
+.grise {
+  filter: grayscale(100%);
+}

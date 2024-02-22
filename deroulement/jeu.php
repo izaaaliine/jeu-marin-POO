@@ -1,4 +1,5 @@
 <?php
+// fonction pour perdre les vies
 function perdreVie($joueur, $points) {
     if (isset($_SESSION[$joueur]['vies'])) {
         $_SESSION[$joueur]['vies'] -= $points;
@@ -7,7 +8,7 @@ function perdreVie($joueur, $points) {
         }
     }
 }
-
+// fonction pour gagner vies
 function gagnerVie($joueur, $points) {
     if (isset($_SESSION[$joueur]['vies'])) {
         $_SESSION[$joueur]['vies'] += $points;

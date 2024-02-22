@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 require_once "classes/joueurs.php";
@@ -36,49 +37,48 @@ $kamek2 = new Kamek("kamek2", "img/kamek.png");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeu Mario POO</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
   <div class="j1">
     <h2>
       <?php echo $_SESSION['joueur1']['nom']; ?>
     </h2>
     <p><?php echo $_SESSION['joueur1']['vies']; ?></p>
     <!-- mario J1 -->
-    <div>
-        <img src="<?php echo $mario1->getImage()?>" class="imgJ1" >
+    <div id="cardJ1">
+        <img src="<?php echo $mario1->getImage()?>" 
+        class="imgJ1" >
         <form method="post" id="form" action="">
-            <input type="submit" class="btnAttaque1J1" name="attaque1j1" value="Attaque">
+            <input type="submit" class="btnAttaque1J1" name="attaque1j1" value="Attaque" >
             <input type="submit" class="btnSpeciale1J1" name="speciale1j1" value="Spéciale">
         </form>   
     </div>
     <!-- Luigi J1 -->
-    <div>
+    <div id="cardJ1">
         <img src="<?php echo $luigi1->getImage()?>" class="imgJ1" >
         <form method="post" action="">
-          <input type="submit" class="btnAttaque2J1" name="attaque2j1" value="Attaque">
+          <input type="submit" class="btnAttaque2J1" name="attaque2j1" value="Attaque" >
           <input type="submit" class="btnSpeciale2J1" name="speciale2j1" value="Spéciale">
         </form>
    
     </div>
     <!-- Peach J1 -->
-    <div>
+    <div id="cardJ1">
         <img src="<?php echo $peach1->getImage()?>" class="imgJ1" >
         <form method="post" action="">
-          <input type="submit" class="btnAttaque3J1" name="attaque3j1" value="Attaque">
+          <input type="submit" class="btnAttaque3J1" name="attaque3j1" value="Attaque" >
           <input type="submit" class="btnSpeciale3J1" name="speciale3j1" value="Spéciale">
       </form>
       
     </div>
     <!-- Kamek J1 -->
-    <div>
+    <div id="cardJ1">
         <img src="<?php echo $kamek1->getImage()?>" class="imgJ1" >
         <form method="post" action="">
           <input type="submit" class="btnAttaque4J1" name="attaque4j1" value="Attaque">
           <input type="submit" class="btnSpeciale4J1" name="speciale4j1" value="Spéciale">
       </form>
-
     </div>
   </div>
   <div class="j2">
@@ -87,7 +87,7 @@ $kamek2 = new Kamek("kamek2", "img/kamek.png");
     </h2>
     <p><?php echo $_SESSION['joueur2']['vies']; ?></p>
     <!-- Mario J2 -->
-    <div>
+    <div id="cardJ2">
         <img src="<?php echo $mario2->getImage()?>" class="imgJ2" >
         <form method="post" action="">
           <input type="submit" class="btnAttaque1J2" name="attaque1J2" value="Attaque">
@@ -95,7 +95,7 @@ $kamek2 = new Kamek("kamek2", "img/kamek.png");
         </form>
     </div>
     <!-- Luigi J2 -->
-    <div>
+    <div id="cardJ2">
         <img src="<?php echo $luigi2->getImage()?>" class="imgJ2" >
         <form method="post" action="">
           <input type="submit" class="btnAttaque2J2" name="attaque2J2" value="Attaque">
@@ -103,7 +103,7 @@ $kamek2 = new Kamek("kamek2", "img/kamek.png");
       </form>
     </div>
     <!-- Peach J2 -->
-    <div>
+    <div id="cardJ2">
         <img src="<?php echo $peach2->getImage()?>" class="imgJ2" >
         <form method="post" action="">
           <input type="submit" class="btnAttaque3J2" name="attaque3J2" value="Attaque">
@@ -111,7 +111,7 @@ $kamek2 = new Kamek("kamek2", "img/kamek.png");
       </form>
     </div>
     <!-- Kamek J2 -->
-    <div>
+    <div id="cardJ2">
         <img src="<?php echo $kamek2->getImage()?>" class="imgJ2" >
         <form method="post" action="">
           <input type="submit" class="btnAttaque4J2" name="attaque4j2" value="Attaque">

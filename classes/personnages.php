@@ -50,15 +50,13 @@ class Luigi extends Personnages {
     public function attaqueText() {
         return "L'Attaque permet de d'enlever 2 vies à l'adversaire (Utilisable 1 seule fois)";
     }
-    public function attaque($adversaire) {
-        $adversaire->setVies($adversaire->getVies() - 2);
-    }
+    // public function attaque($adversaire) {
+    //     $adversaire->setVies($adversaire->getVies() - 2);
+    // }
     public function attaqueSpecialeText() {
         return "La Spéciale permet de doubler l'attaque en enlevant 4 vies à l'adversaire (Utilisable 1 seule fois)";
     }
-    public function attaqueSpeciale($adversaire) {
-        $adversaire->setVies($adversaire->getVies() - 4);
-    }
+  
 }
 
 
@@ -68,15 +66,12 @@ class Peach extends Personnages {
     public function attaqueText() {
         return "L'Attaque permet de d'enlever une vie à l'adversaire";
     }
-    public function attaque($adversaire) {
-        $adversaire->setVies($adversaire->getVies() - 1);
-    }
     public function attaqueSpecialeText() {
         return "La Spéciale permet de donner une vie à son joueur (Utilisable 1 seule fois)";
     }
-    public function attaqueSpeciale($moi) {
-        $moi->setVies($moi->getVies() + 1);
-    }
+    // public function attaqueSpeciale($moi) {
+    //     $moi->setVies($moi->getVies() + 1);
+    // }
 }
 
 
@@ -85,15 +80,15 @@ class Kamek extends Personnages {
     public function attaqueText() {
         return "L'Attaque permet de d'enlever une vie à l'adversaire";
     }
-    public function attaque($adversaire) {
-        $adversaire->setVies($adversaire->getVies() - 1);
-    }
+    // public function attaque($adversaire) {
+    //     $adversaire->setVies($adversaire->getVies() - 1);
+    // }
     public function attaqueSpecialeText() {
         return "La Spéciale permet de doubler l'attaque en enlevant 2 vies à l'adversaire (Utilisable 1 seule fois)";
     }
-    public function attaqueSpeciale($moi) {
-        $moi->setVies($moi->getVies() - 2);
-    }
+    // public function attaqueSpeciale($moi) {
+    //     $moi->setVies($moi->getVies() - 2);
+    // }
 }
 
 
